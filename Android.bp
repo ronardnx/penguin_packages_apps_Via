@@ -1,0 +1,20 @@
+//
+// Copyright (C) 2026 PenguinOS
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app_import {
+    name: "ViaBrowser",
+    apk: "Via.apk",
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+    overrides: ["Browser2"],
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+}
